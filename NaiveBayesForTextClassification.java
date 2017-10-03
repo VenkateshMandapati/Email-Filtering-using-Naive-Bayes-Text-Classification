@@ -87,7 +87,6 @@ public class NaiveBayesForTextClassification {
 		
 		// processing Train Data set==============================================================================
 		StopWords sw = new StopWords();
-		//File TrainDirectory = new File("K:/Master's/4thSEM/ML/Assignments/4/train_dataset1");
 		File TrainDirectory = new File(args[0]);
 		String[] subDirectories = TrainDirectory.list();
 		HashMap<String,Integer> subDirectoryToClass = new HashMap<String,Integer>();
@@ -116,7 +115,6 @@ public class NaiveBayesForTextClassification {
 		
 		//===========================================================================================================
 		
-		//File TestDirectory = new File("K:/Master's/4thSEM/ML/Assignments/4/test_dataset1");
 		File TestDirectory = new File(args[1]);
 		String[] TestSubDirectories = TestDirectory.list();
 		HashMap<String,Integer> testSubDirectoryToClass = new HashMap<String, Integer>();
